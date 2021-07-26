@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tv_show_app_graph"
+    app:startDestination="@id/tvShowSearchFragment">
+
+    <fragment
+        android:id="@+id/tvShowSearchFragment"
+        android:name="com.smartmobilefactory.tvmazeapp.presentation.fragments.TvShowSearchFragment"
+        android:label="tv_show_search_fragment"
+        tools:layout="@layout/fragment_tv_show_search">
+        <action
+            android:id="@+id/navigate_to_tv_show_detail_fragment"
+            app:destination="@id/tvShowDetailFragment"
+            app:enterAnim="@anim/enter_from_left"
+            />
+    </fragment>
+    <fragment
+        android:id="@+id/tvShowDetailFragment"
+        android:name="com.smartmobilefactory.tvmazeapp.presentation.fragments.TvShowDetailFragment"
+        android:label="fragment_tv_show_detail"
+        tools:layout="@layout/fragment_tv_show_detail">
+        <argument
+            android:name="tv_show_item"
+            app:argType="com.smartmobilefactory.tvmazeapp.domain.model.TvShowResponseItem" />
+    </fragment>
+</navigation>

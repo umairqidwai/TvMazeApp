@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="small_50">5dp</dimen>
+    <dimen name="small_100">10dp</dimen>
+    <dimen name="text_size_small">13sp</dimen>
+    <dimen name="text_size_medium">16sp</dimen>
+    <dimen name="tv_show_image_width">100dp</dimen>
+    <dimen name="tv_show_image_height">100dp</dimen>
+</resources>
